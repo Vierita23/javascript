@@ -1,10 +1,10 @@
-// Programa para calcular el promedio de 5 notas y determinar el estado del estudiante
+/*Programa para calcular el promedio de 5 notas y determinar el estado del estudiante*/
 
 let notas = [];
 let suma = 0;
 let cantidadNotas = 5;
 
-// Ingresar las 5 notas
+/*Ingresar las 5 notas*/
 for (let i = 1; i <= cantidadNotas; i++) {
   let nota = parseFloat(prompt(`Ingrese la nota ${i} (de 0 a 10):`));
 
@@ -18,14 +18,14 @@ for (let i = 1; i <= cantidadNotas; i++) {
   }
 }
 
-// Calcular el promedio
+/*Calcular el promedio*/
 let promedio = suma / cantidadNotas;
 
-// Verificar el estado
+/*Verificar el estado*/
 if (promedio >= 7) {
-  alert(`Promedio: ${promedio.toFixed(2)}. ¡Felicidades! Pasaste de año.`);
+  alert(`Promedio: ${promedio.toFixed(2)}. ¡Felicidades! Pasaste el semestre.`);
 } else if (promedio >= 3.5) {
-  alert(`Promedio: ${promedio.toFixed(2)}. Estás en estado de suspenso.`);
+  alert(`Promedio: ${promedio.toFixed(2)}. Estás en supletorio.`);
 } else {
-  alert(`Promedio: ${promedio.toFixed(2)}. Lo siento, perdiste el semestre.`);
+  alert(`Promedio: ${promedio.toFixed(2)}. Lo siento perdiste el semestre.`);
 }
